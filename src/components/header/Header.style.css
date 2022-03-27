@@ -1,0 +1,67 @@
+.header {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 72px;
+    z-index: 20;
+    background-color: var(--cream-light);
+}
+
+.count {
+    width: 2rem;
+    height: 2rem;
+    margin-top: -4px;
+    border-radius: 100%;
+    color: white;
+    background-color: var(--black);
+}
+
+.hamburger {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hamburger > .line {
+    width: 90%;
+    height: 2px;
+    margin: 5px 0px;
+    display: block;
+    background-color: var(--black);
+}
+
+.hamburger > .line:first-child {
+    width: 50%;
+}
+
+.hamburger > .line:last-child {
+    width: 80%;
+}
+
+/*================================= RESPONSIVE STYLES ========================================*/
+
+@media only screen and (max-width: 1900px) {
+    .header > nav {
+        padding: 2.1rem 20rem;
+    }
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .header > nav {
+        padding: 2.1rem 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 980px) {
+    .header > nav {
+        padding: 2.1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .header > nav {
+        padding: 2.1rem 5rem;
+    }
+}
