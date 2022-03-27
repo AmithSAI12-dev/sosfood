@@ -1,0 +1,36 @@
+.mobileNav {
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 11;
+    background-color: var(--cream-v2);
+    transition: all .7s ease-out;
+}
+
+.mobileNav  a {
+    transition: all .3s ease-in;
+}
+
+.mobileNav__heading {
+    font-size: 6.9rem;
+    line-height: 10px;
+    margin-left: -10px;
+    color: var(--cream-light);
+    font-family: "albra medium", sans-serif;
+}
+
+.slide {
+    width: 60%;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+    .slide {
+        width: 100%;
+    }
+}
