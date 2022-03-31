@@ -8,7 +8,8 @@ export const slider = [
         buttonColor: "var(--black)",
         size: "5.27rem",
         font: "albra medium",
-        imageWidth: "130"
+        imageWidth: "130",
+        indicatorColor:"#3f3f3f"
     },
     {
         heading: "Koriander",
@@ -19,7 +20,8 @@ export const slider = [
         buttonColor: "var(--primary)",
         size: "6.59rem",
         font: "Inter",
-        imageWidth: "130"
+        imageWidth: "130",
+        indicatorColor: "#d1b697"
     },
     {
         heading: "Kreuz \nKümmel",
@@ -30,7 +32,8 @@ export const slider = [
         buttonColor: "var(--secondary)",
         size: "6.59rem",
         font: "Inter",
-        imageWidth: "124"
+        imageWidth: "124",
+        indicatorColor: "#d4a288"
     },
     {
         heading: "Paprika",
@@ -41,6 +44,7 @@ export const slider = [
         buttonColor: "var(--tertiary)",
         size: "6.59rem",
         font: "Inter",
-        imageWidth: "120.2"
+        imageWidth: "120.2",
+        indicatorColor: "#a35858"
     }
 ]

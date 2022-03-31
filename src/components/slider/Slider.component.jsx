@@ -27,7 +27,7 @@ function Slider() {
   return (
     <>
       {
-        slider.map(({heading, paragraph, image, button, background, size, buttonColor, font, imageWidth}, index) => (
+        slider.map(({heading, paragraph, image, button, background, size, buttonColor, font, imageWidth, indicatorColor}, index) => (
           <div className={`slider ${index===currentSlide? 'active': ''}`} key={index} style={{background: `${background}`}}>
             <div className='container m-auto flex flex-row items-stretch px-[23.2rem] relative'>
                 {/* Slider Content */}
@@ -42,8 +42,8 @@ function Slider() {
                     <img src={image} alt="Product" className={`${index===currentSlide? direction==='right' ? 'fadeRightIn' : 'fadeLeftIn': ''} 
                           ${index===prevIndex? direction==='right' ? 'fadeRightOut' : 'fadeLeftOut': ''} `} style={{maxWidth: `${imageWidth}%`}} />
                     <div className="indicators flex flex-row items-center jutify-center">
-                      <a href="/" className='flex items-center justify-center' onClick={nextSlide}><FaArrowLeft /></a>
-                      <a href="/" className='flex items-center justify-center' onClick={prevSlide}><FaArrowRight /></a>
+                      <a href="/" className='flex items-center justify-center' onClick={nextSlide} style={{backgroundColor: `${indicatorColor}`}}><FaArrowLeft /></a>
+                      <a href="/" className='flex items-center justify-center' onClick={prevSlide} style={{backgroundColor: `${indicatorColor}`}}><FaArrowRight /></a>
                     </div>
                 </div>
             </div>
