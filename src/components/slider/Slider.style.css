@@ -1,20 +1,32 @@
 .slider {
+    position: absolute;
+    top: 72px;
     width: 100vw;
     height: max-content;
+    opacity: 0;
+    transition: all 1s ease-in-out;
 }
 
 .slider > div {
     width: 100vw;
     height: max-content;
-    display: none;
 }
 
-.slider > div.active {
-    display: flex;
+.slider.active {
+    opacity: 1;
 }
 
 .slider__content {
+    opacity: 0;
     max-width: 37.6rem;
+}
+
+.fadeIn {
+    animation: fadeIn 1s forwards .8s ease-in-out;
+}
+
+.fadeOut {
+    animation: fadeOut .8s forwards ease-in-out;
 }
 
 .slider__content > h1 {
@@ -40,6 +52,7 @@
 .slider__images > img {
     max-width: 130%;
     height: auto;
+    opacity: 0;
 }
 
 .slider__images > .indicators {
@@ -79,5 +92,31 @@
     .slider > div {
         padding-top: 4.1rem;
         padding-bottom: 4.1rem;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(10%);
+        opacity: 0;
     }
 }
