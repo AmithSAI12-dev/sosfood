@@ -48,7 +48,6 @@
 } 
 
 .slider__images > img {
-    max-width: 130%;
     height: auto;
     opacity: 0;
 }

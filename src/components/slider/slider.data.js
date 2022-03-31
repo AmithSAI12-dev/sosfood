@@ -7,7 +7,8 @@ export const slider = [
         background: "linear-gradient(to right, var(--cream-v2) 0%, var(--cream-v2) 59%, var(--black) 59%, var(--black) 100%)",
         buttonColor: "var(--black)",
         size: "5.27rem",
-        font: "albra medium"
+        font: "albra medium",
+        imageWidth: "130"
     },
     {
         heading: "Koriander",
@@ -17,7 +18,8 @@ export const slider = [
         background: "linear-gradient(to right, var(--cream-v2) 0%, var(--cream-v2) 59%, var(--primary) 59%, var(--primary) 100%)",
         buttonColor: "var(--primary)",
         size: "6.59rem",
-        font: "Inter"
+        font: "Inter",
+        imageWidth: "130"
     },
     {
         heading: "Kreuz \nKümmel",
@@ -27,7 +29,8 @@ export const slider = [
         background: "linear-gradient(to right, var(--cream-v2) 0%, var(--cream-v2) 59%, var(--secondary) 59%, var(--secondary) 100%)",
         buttonColor: "var(--secondary)",
         size: "6.59rem",
-        font: "Inter"
+        font: "Inter",
+        imageWidth: "124"
     },
     {
         heading: "Paprika",
@@ -37,6 +40,7 @@ export const slider = [
         background: "linear-gradient(to right, var(--cream-v2) 0%, var(--cream-v2) 59%, var(--tertiary) 59%, var(--tertiary) 100%)",
         buttonColor: "var(--tertiary)",
         size: "6.59rem",
-        font: "Inter"
+        font: "Inter",
+        imageWidth: "120.2"
     }
 ]
