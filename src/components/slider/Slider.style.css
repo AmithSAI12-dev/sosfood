@@ -14,6 +14,7 @@
 
 .slider.active {
     opacity: 1;
+    z-index: 11;
 }
 
 .slider__content {
@@ -39,7 +40,12 @@
     padding: 1.179rem 4.22rem;
     color: white;
     width: max-content;
+    transition: all .3s ease-in-out;
 }
+
+.slider__content > button:hover {
+    opacity: .9;
+} 
 
 .slider__images > img {
     max-width: 130%;

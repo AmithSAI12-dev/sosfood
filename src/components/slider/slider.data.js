@@ -18,5 +18,25 @@ export const slider = [
         buttonColor: "var(--primary)",
         size: "6.59rem",
         font: "Inter"
+    },
+    {
+        heading: "Kreuz \nKümmel",
+        paragraph: "Die frische Schärfe des Kreuzkümmels ist fester Bestandteil der orientalischen Küche. Ob im Hummus oder Falafel, Kreuzkümmel ist eine Geschmacksreise in die Tiefe des Orients.",
+        button: "Mehr erfahren",
+        image: "https://assets-global.website-files.com/5fad2152fd8977449067ec8e/60789272c99a1a875b709db9_007_cumin_large.png",
+        background: "linear-gradient(to right, var(--cream-v2) 0%, var(--cream-v2) 59%, var(--secondary) 59%, var(--secondary) 100%)",
+        buttonColor: "var(--secondary)",
+        size: "6.59rem",
+        font: "Inter"
+    },
+    {
+        heading: "Paprika",
+        paragraph: "Unser fruchtig warmer Paprika bringt Sonne in deine Küche. Dieses Gewürz rundet viele Gerichte ab. Im Gulasch oder im Dip - Paprika bringt dir die nötige Wärme.",
+        button: "Mehr erfahren",
+        image: "https://assets-global.website-files.com/5fad2152fd8977449067ec8e/6078920115794d1697ab9e61_004_paprika_large.png",
+        background: "linear-gradient(to right, var(--cream-v2) 0%, var(--cream-v2) 59%, var(--tertiary) 59%, var(--tertiary) 100%)",
+        buttonColor: "var(--tertiary)",
+        size: "6.59rem",
+        font: "Inter"
     }
 ]
