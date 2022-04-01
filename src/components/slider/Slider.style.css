@@ -4,7 +4,7 @@
     width: 100vw;
     height: max-content;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .slider > div {
@@ -83,6 +83,7 @@
     animation: fadeRightOut .8s forwards ease-in-out;
 }
 
+/*========================= RESPONSIVE DESIGN =============================*/
 
 @media only screen and (max-width: 1900px) {
     .slider > div {
@@ -107,6 +108,41 @@
         padding-bottom: 4.1rem;
     }
 }
+
+@media only screen and (max-width: 800px) {
+
+    .slider > div {
+        flex-direction: column;
+    }
+
+    .slider:first-child {
+        background: linear-gradient(to bottom, var(--cream-v2) 0%, var(--cream-v2) 80%, var(--black) 80%, var(--black) 100%) !important;
+    }
+
+    .slider:nth-child(2) {
+        background: linear-gradient(to bottom, var(--cream-v2) 0%, var(--cream-v2) 80%, var(--primary) 80%, var(--primary) 100%) !important;
+    }
+
+    .slider:nth-child(3) {
+        background: linear-gradient(to bottom, var(--cream-v2) 0%, var(--cream-v2) 80%, var(--secondary) 80%, var(--secondary) 100%) !important;
+    }
+
+
+    .slider:last-child {
+        background: linear-gradient(to bottom, var(--cream-v2) 0%, var(--cream-v2) 80%, var(--tertiary) 80%, var(--tertiary) 100%) !important;
+    }
+
+    .slider__images > .indicators {
+        position: absolute;
+        left: 0px;
+        bottom: 6%;
+        gap: 2rem;
+    }
+    
+    
+}
+
+/*========================== ANIMATIONS ============================*/
 
 
 @keyframes fadeRightIn {

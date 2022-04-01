@@ -25,7 +25,7 @@ function Slider() {
   }
 
   return (
-    <>
+    <div className='parent'>
       {
         slider.map(({heading, paragraph, image, button, background, size, buttonColor, font, imageWidth, indicatorColor}, index) => (
           <div className={`slider ${index===currentSlide? 'active': ''}`} key={index} style={{background: `${background}`}}>
@@ -50,7 +50,7 @@ function Slider() {
           </div>
         ))
       }
-    </>
+    </div>
   )
 }
 
